@@ -1,16 +1,24 @@
 #include <cGeometry.h>
 #include <math.h>
 
-#define KAPPA1 (3.14159 - 1.9391)
-#define KAPPA2 (3.14159 - 2.061)
-#define KAPPA3 (3.14159 -2.1186)
+//#define KAPPA1 (3.14159 - 1.9391)
+//#define KAPPA2 (3.14159 - 2.061) 
+//#define KAPPA3 (3.14159 - 2.1186)
+
+#define KAPPA1 (3.14159 - 2.1186)
+#define KAPPA2 (3.14159 - 1.9391)
+#define KAPPA3 (3.14159 - 2.061) 
 #define OMEGACIS -3.1318
 
 template <typename T> cGeometry<T>::cGeometry(){
      //backbone angles
-    C_N_CA_angle = (M_PI - 1.9391);
-    N_CA_C_angle = (M_PI - 2.061);
-    CA_C_N_angle = (M_PI - 2.1186);
+  //C_N_CA_angle = (M_PI - 1.9391);
+  //N_CA_C_angle = (M_PI - 2.061); 
+  //CA_C_N_angle = (M_PI - 2.1186);
+    C_N_CA_angle = (M_PI - 2.1186);
+    N_CA_C_angle = (M_PI - 1.9391); 
+    CA_C_N_angle = (M_PI - 2.061);
+    
     CA_C_O_angle = (M_PI - 2.1033);
     omega_const = -3.1318;
     //backbone distatnces
@@ -91,9 +99,9 @@ template <typename T> cGeometry<T>::~cGeometry(){
 
 template <typename T> void cGeometry<T>::gly(){
     //backbone angles
-    C_N_CA_angle = (3.14159 - 1.9391);
-    N_CA_C_angle = (3.14159 - 2.061);
-    CA_C_N_angle = (3.14159 - 2.1186);
+    C_N_CA_angle = (3.14159 - 2.1186);
+    N_CA_C_angle = (3.14159 - 1.9391);
+    CA_C_N_angle = (3.14159 - 2.061);
     CA_C_O_angle = (3.14159 - 2.1033);
     omega_const = -3.1318;
     //backbone distatnces
@@ -104,9 +112,9 @@ template <typename T> void cGeometry<T>::gly(){
 
 template <typename T> void cGeometry<T>::ala(){
     //backbone angles
-    C_N_CA_angle = (3.14159 - 1.9391);
-    N_CA_C_angle = (3.14159 - 2.061);
-    CA_C_N_angle = (3.14159 - 2.1186);
+    C_N_CA_angle = (3.14159 - 2.1186);
+    N_CA_C_angle = (3.14159 - 1.9391);
+    CA_C_N_angle = (3.14159 - 2.061);
     CA_C_O_angle = (3.14159 - 2.1033);
     omega_const = -3.1318;
     //backbone distatnces
